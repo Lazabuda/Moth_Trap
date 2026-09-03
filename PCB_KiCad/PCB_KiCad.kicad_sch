@@ -1,5 +1,120 @@
 (kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 0d6dfaf2-7c14-463d-b189-9f84203ba8ee)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (lib_symbols
+    (symbol "LEDs:3535UV_365nm" (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at -3.81 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "3535UV_365nm" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "LEDs:3535UV_365nm" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "3535UV_365nm_0_1"
+        (polyline
+          (pts
+            (xy -2.54 -1.27)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -2.54)
+            (xy 2.54 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -2.54)
+            (xy 1.27 -7.62)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.81 -2.54)
+            (xy -3.81 -7.62)
+            (xy 1.27 -5.08)
+            (xy -3.81 -2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy -1.27 1.27)
+            (xy 0 1.27)
+            (xy 0 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 0)
+            (xy 1.27 0)
+            (xy 2.54 0)
+            (xy 2.54 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "3535UV_365nm_1_0"
+        (pin passive line (at -6.35 -5.08 0) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 -5.08 180) (length 2.54)
+          (name "C" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (symbol (lib_id "LEDs:3535UV_365nm") (at 109.22 73.66 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e9b78e73-796c-417d-a3a3-5e40f93f617e)
+    (property "Reference" "D1" (at 108.585 68.58 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "3535UV_365nm" (at 108.585 71.12 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "LEDs:3535UV_365nm" (at 109.22 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 109.22 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1c9b55c2-04c5-4cd9-97ab-0436efb6bf3c))
+    (pin "2" (uuid b6cbc78c-deb6-4679-a6f8-8ae12b949848))
+    (instances
+      (project "PCB_KiCad"
+        (path "/0d6dfaf2-7c14-463d-b189-9f84203ba8ee"
+          (reference "D1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
 )
